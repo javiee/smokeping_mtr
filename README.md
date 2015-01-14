@@ -4,9 +4,9 @@
 ```
 ./mrt_remote.py alert [target ip] loss-pattern rtt-pattern hostname
 ```
-This will test that the mail is being sent and connectivity among the servers.
+This will test that the mail is being sent and the script can run MTR command though SSH.
 * Script assumes that ssh connections are passwordless using key authentication.
-* The script will log its activity /var/log/smokeping.log
+* The script will log its activity in /var/log/smokeping.log
 ```
 2015-01-14 15:46:27,464 - ALERT has been triggered, alert:alert, target:89.200.142.147, loss:loss-pattern,rtt:rtt-pattern, hostname hostname
 2015-01-14 15:46:27,472 - MTR from server1 successful
